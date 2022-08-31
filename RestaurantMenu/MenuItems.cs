@@ -1,14 +1,26 @@
 ﻿using System;
 namespace RestaurantMenu
 {
-    public class MenuItems
+    public class MenuItem
     {
-        private string _name;
-        public double _price;
-        private string _description;
-        private string _category;
-        public bool isNew;
+        public string Name { get; set; }
 
+        public double Price { get; set; }
+
+        public string Description { get; set; }
+
+        public string Category { get; set; }
+
+        public bool IsNew { get; set; }
+
+        public MenuItem(string name, double price, string description, string category, bool isNew)
+        {
+            Name = name;
+            Price = price;
+            Description = description;
+            Category = category;
+            IsNew = isNew;
+        }
     }
-}
 
+}
